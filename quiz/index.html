@@ -64,6 +64,11 @@ jQuery(function() {
   </div><!-- #header -->
   <div id="main">
     <div id="container">
+      <div class="archived" style="background-color: orange; border: solid 2px grey; font-size: 30px; line-height: 36px; text-align: center; padding: 15px; margin-bottom: 20px;">
+        Hi there, YourTopia is currently <strong>not</strong> accepting new quiz submissions &ndash; we're doing a site revamp.
+        <br /><br />
+        In the mean time, you can check out the <a href="/result/">current results</a> or <a href="http://openeconomics.net/getinvolved">get in touch</a>.
+      </div>
       <div id="content" role="main">
         <div class="page type-page hentry">
           <div class="entry-content">
@@ -74,7 +79,7 @@ jQuery(function() {
     </h2>
     <div id="pie"></div>
     <div id="div-question-list">
-      <form id="question-form" action="/quiz" method="POST">
+      <form id="question-form" action="/quiz" method="GET">
         <input type="hidden" name="dimension" value="__dimension__">
         <ul id="question-listing">
           <li class="question" id="question-economy">
