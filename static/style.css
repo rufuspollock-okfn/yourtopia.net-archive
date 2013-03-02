@@ -1,0 +1,274 @@
+#wrapper {
+  width: 960px;
+}
+
+#site-title img {
+  height: 60px;
+}
+
+#login-and-search .login-form {
+  display: none;
+}
+
+#primary {
+  display: none;
+}
+
+#content {
+  margin-right: 0;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  margin-bottom: 10px;
+}
+
+#content p, #content ul, #content ol, #content dd, #content pre, #content hr 
+{
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+/*************************
+  * Quiz
+  ************************/
+
+.quiz-compute {
+  text-align: center;
+  width: 70%;
+  border: dashed 1px #999999;
+  background-color: #e2e2e2;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.quiz-compute .instructions {
+  font-size: 85%;
+}
+
+#question-listing {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+#question-listing li {
+  margin-bottom: 20px;
+}
+
+input.weighting-val {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-shadow: none;
+  background: transparent;
+  width: 28px;
+  text-align:right
+}
+
+div.ui-slider {
+  margin-top: 10px;
+  height: 0.2em;
+  width: 90%;
+} 
+
+.ui-slider-horizontal .ui-slider-handle {
+  height: 0.6em;
+  width: 0.6em;
+}
+
+#pie {
+  float: right;
+  height: 250px;
+  width: 250px;
+}
+
+#div-question-list {
+  margin-right: 270px;
+}
+
+h3 {
+  clear: none;
+}
+
+/*************************
+  * Notifications
+  ************************/
+
+div#inline-notification {
+  background: #DAD4DF;
+  padding: 0.6em 0;
+  border-bottom: solid 1px #9f9f9f;
+  text-align: center;
+  padding: 0.8em 1.5%; 
+  line-height: 1em;
+  font-size: 14px;
+}
+
+div#inline-notification.error {
+  background: #800000;
+  color: white;
+}
+
+div#inline-notification a {
+  font-weight: bold;
+}
+
+div#inline-notification button {
+  float: right;
+  margin-top: -0.2em;
+  padding-top: 0;
+  font-size: 90%;
+}
+
+/*************************
+  * Home Page
+  ************************/
+
+a.start_button {
+    margin: 20px;
+    padding: 6px 20px 6px;
+    color: #333 !important;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif !important;
+    text-decoration: none;
+    font-size: 28px;
+    line-height: 60px;
+    background: #ddd;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    text-shadow: #fff 0px 1px 1px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc));
+    background: -moz-linear-gradient(top,  #eeeeee,  #cccccc);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc');
+    vertical-align: middle;
+}
+
+.teaser {
+	font-size: 13px;
+  margin-top: 20px;
+}
+
+.Home #primary {
+  display: none;
+}
+
+.Home #content {
+  margin-right: 0;
+}
+
+.Home .row {
+  clear: both;
+  margin: auto;
+  width: 680px;
+}
+
+.Home .box {
+  padding: 2%;
+  width: 650px;
+}
+
+.Home .top .box {
+  background-color: #e2e2e2;
+  text-align: center;
+  vertical-align: center;
+  height: 220px;
+  float: left;
+  width: 300px;
+  border: dashed 1px #999999;
+  /* border-radius: 12px; */
+  margin-bottom: 20px;
+}
+
+.Home .top .right {
+  float: right;
+  background-color: #f0f0f0;
+  padding: 2%;
+  width: 280px;
+  height: 220px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Home .startquiz {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Home .startquiz h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Home .idea {
+  padding-top: 10px;
+  border: dashed 1px #999999;
+  /* border-radius: 12px; */
+  margin-top: 20px;
+  background-color: #D5DFFF;
+  text-align: left;
+}
+
+
+
+/*************************
+  * About Page
+  ************************/
+
+.About .box_left {
+  background-color: #E2E2E2;
+  border: thin dashed #666;
+  text-align: left;
+  padding: 2%;
+  vertical-align: top;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.youtube_embed {
+  float: right;
+}
+
+
+/*************************
+  * How Page
+  ************************/
+
+
+.How #primary {
+  display: none;
+}
+
+.How #content {
+  margin-right: 0;
+}
+
+
+.How .top .box_left {
+  background-color: #E2E2E2;
+  border: thin dashed #666;
+  text-align: left;
+  padding: 2%;
+  vertical-align: top;
+  width: 100%;
+  float: center;
+  margin-bottom: 20px;
+}
+
+.How .box_right {
+  background-color: #D5DFFF;
+  border: thin dashed #666;
+  text-align: center;
+  vertical-align: center;
+  width: 40%;
+  height: 350px;
+  float: right;
+  margin-bottom: 20px;
+}
+
+ol.notes li:target {
+    outline: 1px solid #333;
+}
+

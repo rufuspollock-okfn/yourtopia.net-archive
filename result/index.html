@@ -1,0 +1,1160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <html>
+<head>
+  <title>Home - Yourtopia.net</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="http://assets.okfn.org/gfx/logo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="http://phase2.wheredoesmymoneygo.org/wp-content/themes/wdmmg/style.css" media="screen, print" title="Master stylesheet" charset="utf-8">
+  <link rel="stylesheet" href="/static/style.css" media="screen,print" title="Master stylesheet" charset="utf-8">
+  <!-- app js -->
+  <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
+  <script src="/static/vendor/jquery.json-2.2.min.js"></script>
+<!--[if IE]><script language="javascript" type="text/javascript" src="http://assets.okfn.org/ext/flot/0.6/excanvas.min.js"></script><![endif]-->
+<script type="text/javascript">
+  var OpenHDI = OpenHDI || {};
+  OpenHDI.user_id = '9a0b7247-1f7f-46ee-909c-7b14f6412b55';
+</script>
+	<link rel="stylesheet" href="/static/chart.css" media="screen,print" title="Master stylesheet" charset="utf-8">
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script src="/static/vendor/protovis-r3.2.js"></script>
+    <script src="/static/result.js"></script>
+    <script src="/static/app.js"></script>
+    <script type="text/javascript">
+var global_scores = [["NO", 1.0, "Norway"], ["IS", 0.998, "Iceland"], ["SE", 0.97599999999999998, "Sweden"], ["LI", 0.97599999999999998, "Liechtenstein"], ["US", 0.96999999999999997, "United States"], ["NZ", 0.95999999999999996, "New Zealand"], ["CU", 0.95799999999999996, "Cuba"], ["AU", 0.95599999999999996, "Australia"], ["FI", 0.95599999999999996, "Finland"], ["CA", 0.94399999999999995, "Canada"], ["SG", 0.93899999999999995, "Singapore"], ["JP", 0.93600000000000005, "Japan"], ["IL", 0.93300000000000005, "Israel"], ["CH", 0.93200000000000005, "Switzerland"], ["DK", 0.92400000000000004, "Denmark"], ["DE", 0.92300000000000004, "Germany"], ["KR", 0.92300000000000004, "Korea, Republic of"], ["IE", 0.92100000000000004, "Ireland"], ["FR", 0.92000000000000004, "France"], ["LU", 0.91900000000000004, "Luxembourg"], ["NL", 0.91800000000000004, "Netherlands"], ["GB", 0.91600000000000004, "United Kingdom"], ["BE", 0.91500000000000004, "Belgium"], ["AT", 0.91400000000000003, "Austria"], ["HK", 0.91200000000000003, "Hong Kong"], ["ES", 0.90500000000000003, "Spain"], ["QA", 0.89900000000000002, "Qatar"], ["CY", 0.89400000000000002, "Cyprus"], ["IT", 0.89200000000000002, "Italy"], ["BB", 0.879, "Barbados"], ["GR", 0.878, "Greece"], ["CZ", 0.86899999999999999, "Czech Republic"], ["MT", 0.86799999999999999, "Malta"], ["BN", 0.86699999999999999, "Brunei Darussalam"], ["SI", 0.86699999999999999, "Slovenia"], ["KW", 0.85299999999999998, "Kuwait"], ["PT", 0.84699999999999998, "Portugal"], ["BS", 0.83899999999999997, "Bahamas"], ["AE", 0.83799999999999997, "United Arab Emirates"], ["MX", 0.82999999999999996, "Mexico"], ["BH", 0.82799999999999996, "Bahrain"], ["PL", 0.82399999999999995, "Poland"], ["EE", 0.82299999999999995, "Estonia"], ["HU", 0.82299999999999995, "Hungary"], ["OM", 0.82199999999999995, "Oman"], ["SA", 0.81799999999999995, "Saudi Arabia"], ["PW", 0.81200000000000006, "Palau"], ["CL", 0.81000000000000005, "Chile"], ["ME", 0.80900000000000005, "Montenegro"], ["AR", 0.80700000000000005, "Argentina"], ["HR", 0.80000000000000004, "Croatia"], ["CR", 0.79900000000000004, "Costa Rica"], ["LT", 0.79700000000000004, "Lithuania"], ["SK", 0.79600000000000004, "Slovakia"], ["LV", 0.79400000000000004, "Latvia"], ["UY", 0.79300000000000004, "Uruguay"], ["LY", 0.78900000000000003, "Libyan Arab Jamahiriya"], ["MY", 0.78700000000000003, "Malaysia"], ["AL", 0.78000000000000003, "Albania"], ["PA", 0.77900000000000003, "Panama"], ["AG", 0.77600000000000002, "Antigua and Barbuda"], ["TN", 0.77500000000000002, "Tunisia"], ["SC", 0.77400000000000002, "Seychelles"], ["VC", 0.77200000000000002, "Saint Vincent and the Grenadines"], ["RO", 0.77000000000000002, "Romania"], ["RS", 0.76900000000000002, "Serbia"], ["DM", 0.76700000000000002, "Dominica"], ["BA", 0.76700000000000002, "Bosnia and Herzegovina"], ["TT", 0.76700000000000002, "Trinidad and Tobago"], ["BR", 0.76000000000000001, "Brazil"], ["KN", 0.75900000000000001, "Saint Kitts and Nevis"], ["GD", 0.75700000000000001, "Grenada"], ["BY", 0.753, "Belarus"], ["MH", 0.753, "Marshall Islands"], ["BZ", 0.753, "Belize"], ["BG", 0.753, "Bulgaria"], ["RU", 0.752, "Russian Federation"], ["IR", 0.752, "Iran, Islamic Republic of"], ["LC", 0.752, "Saint Lucia"], ["JM", 0.75, "Jamaica"], ["MK", 0.749, "Macedonia, the former Yugoslav Republic of"], ["TR", 0.748, "Turkey"], ["UA", 0.74399999999999999, "Ukraine"], ["VE", 0.74199999999999999, "Venezuela, Bolivarian Republic of"], ["EC", 0.73799999999999999, "Ecuador"], ["TO", 0.73099999999999998, "Tonga"], ["CN", 0.73099999999999998, "China"], ["CO", 0.72899999999999998, "Colombia"], ["MD", 0.72699999999999998, "Moldova, Republic of"], ["MU", 0.72299999999999998, "Mauritius"], ["JO", 0.72299999999999998, "Jordan"], ["DZ", 0.72099999999999997, "Algeria"], ["LB", 0.71799999999999997, "Lebanon"], ["LK", 0.71799999999999997, "Sri Lanka"], ["FJ", 0.71699999999999997, "Fiji"], ["GE", 0.71399999999999997, "Georgia"], ["PE", 0.71199999999999997, "Peru"], ["AM", 0.70599999999999996, "Armenia"], ["SY", 0.70199999999999996, "Syrian Arab Republic"], ["WS", 0.69699999999999995, "Samoa"], ["SR", 0.68899999999999995, "Suriname"], ["PY", 0.68500000000000005, "Paraguay"], ["SV", 0.68400000000000005, "El Salvador"], ["TH", 0.68400000000000005, "Thailand"], ["KZ", 0.68000000000000005, "Kazakhstan"], ["TM", 0.67600000000000005, "Turkmenistan"], ["VN", 0.67300000000000004, "Viet Nam"], ["KG", 0.67300000000000004, "Kyrgyzstan"], ["EG", 0.67200000000000004, "Egypt"], ["AZ", 0.67100000000000004, "Azerbaijan"], ["DO", 0.67100000000000004, "Dominican Republic"], ["FM", 0.67000000000000004, "Micronesia, Federated States of"], ["MV", 0.67000000000000004, "Maldives"], ["HN", 0.66900000000000004, "Honduras"], ["VU", 0.66700000000000004, "Vanuatu"], ["PH", 0.66200000000000003, "Philippines"], ["UZ", 0.66200000000000003, "Uzbekistan"], ["GY", 0.65700000000000003, "Guyana"], ["MA", 0.65700000000000003, "Morocco"], ["ID", 0.65300000000000002, "Indonesia"], ["NI", 0.65200000000000002, "Nicaragua"], ["CV", 0.64600000000000002, "Cape Verde"], ["MN", 0.64400000000000002, "Mongolia"], ["KI", 0.64000000000000001, "Kiribati"], ["BO", 0.63600000000000001, "Bolivia, Plurinational State of"], ["GA", 0.626, "Gabon"], ["BW", 0.625, "Botswana"], ["BT", 0.61899999999999999, "Bhutan"], ["GT", 0.61699999999999999, "Guatemala"], ["IQ", 0.61699999999999999, "Iraq"], ["NA", 0.60399999999999998, "Namibia"], ["ZA", 0.58199999999999996, "South Africa"], ["SB", 0.58199999999999996, "Solomon Islands"], ["TJ", 0.57999999999999996, "Tajikistan"], ["IN", 0.56999999999999995, "India"], ["PK", 0.54200000000000004, "Pakistan"], ["BD", 0.52100000000000002, "Bangladesh"], ["LA", 0.51700000000000002, "Lao People's Democratic Republic"], ["DJ", 0.51600000000000001, "Djibouti"], ["GQ", 0.51300000000000001, "Equatorial Guinea"], ["GH", 0.50900000000000001, "Ghana"], ["ST", 0.498, "Sao Tome and Principe"], ["PG", 0.49099999999999999, "Papua New Guinea"], ["CG", 0.48199999999999998, "Congo"], ["KM", 0.48199999999999998, "Comoros"], ["TG", 0.47999999999999998, "Togo"], ["KH", 0.47699999999999998, "Cambodia"], ["MG", 0.47499999999999998, "Madagascar"], ["MR", 0.46700000000000003, "Mauritania"], ["KE", 0.46700000000000003, "Kenya"], ["NP", 0.46500000000000002, "Nepal"], ["SN", 0.45700000000000002, "Senegal"], ["SD", 0.45700000000000002, "Sudan"], ["HT", 0.45000000000000001, "Haiti"], ["TL", 0.44900000000000001, "Timor-Leste"], ["SZ", 0.443, "Swaziland"], ["YE", 0.44, "Yemen"], ["MM", 0.437, "Myanmar"], ["TZ", 0.42799999999999999, "Tanzania, United Republic of"], ["ER", 0.42699999999999999, "Eritrea"], ["CM", 0.42099999999999999, "Cameroon"], ["BJ", 0.42099999999999999, "Benin"], ["ET", 0.41899999999999998, "Ethiopia"], ["GN", 0.41899999999999998, "Guinea"], ["UG", 0.41699999999999998, "Uganda"], ["NG", 0.41699999999999998, "Nigeria"], ["AO", 0.39200000000000002, "Angola"], ["LS", 0.38900000000000001, "Lesotho"], ["MW", 0.38700000000000001, "Malawi"], ["CI", 0.38300000000000001, "C\u00f4te d'Ivoire"], ["GM", 0.36299999999999999, "Gambia"], ["ML", 0.34599999999999997, "Mali"], ["BF", 0.33100000000000002, "Burkina Faso"], ["SO", 0.32900000000000001, "Somalia"], ["RW", 0.316, "Rwanda"], ["LR", 0.313, "Liberia"], ["ZW", 0.311, "Zimbabwe"], ["MZ", 0.311, "Mozambique"], ["ZM", 0.29599999999999999, "Zambia"], ["NE", 0.27800000000000002, "Niger"], ["CF", 0.26300000000000001, "Central African Republic"], ["TD", 0.25800000000000001, "Chad"], ["CD", 0.25700000000000001, "Congo, Democratic Republic of the"], ["GW", 0.251, "Guinea-Bissau"], ["SL", 0.247, "Sierra Leone"], ["BI", 0.23599999999999999, "Burundi"]];
+var scores = global_scores;
+var user_scores = [];
+google.load('visualization', '1', {'packages': ['geomap']});
+google.setOnLoadCallback(drawMap);
+var sunburstWidth = 270;
+var mapWidth = 430;
+function drawMap() {
+  var data = new google.visualization.DataTable();
+  data.addRows(scores.length);
+  data.addColumn('string', 'Country');
+  data.addColumn('number', 'Yourtopia score');
+  data.addColumn('string', 'Country name');
+  for(var idx in scores) {
+    var idx = parseInt(idx);
+    data.setValue(idx, 0, scores[idx][0]);
+    data.setValue(idx, 1, scores[idx][1]);
+    data.setValue(idx, 2, scores[idx][2]);
+  }
+  var options = {};
+  options['dataMode'] = 'regions';
+  options['colors'] = [0xcb4b4b, 0xedc240, 0x89c141];
+  options['width'] = mapWidth + 'px';
+  options['height'] = mapWidth / 556 * 347 + 'px';
+  var container = document.getElementById('worldmap');
+  var geomap = new google.visualization.GeoMap(container);
+  geomap.draw(data, options);
+};
+var weights = {"education": {"Mean years of schooling (adults aged 25 years and above)": 0.047884071900368474, "Expected years of schooling - primary to tertiary (children of school entrance age)": 0.048822819786778979, "Public spending on education total (% of GDP)": 0.22312212408174198, "Researchers in R&D (per million people)": 0.055777371340635158}, "health": {"Unmet need for contraception (% of married women ages 15-49)": 0.030474406600051678, "Prevalence of undernourishment (% of population)": 0.043280926162178573, "Mortality rate infant (per 1000 live births)": 0.039288474369112002, "Life expectancy at birth total (years)": 0.2370946961804653}, "economy": {"Household final consumption expenditure PPP (constant 2005 international $)": 0.075537912166839374, "Poverty headcount ratio at $1.25 a day (PPP) (% of population)": 0.038688223450144936, "GNI per capita PPP (constant 2008 PPP US$)": 0.17683554790174316, "Long-term unemployment (% of total unemployment)": 0.035483250957838615}};
+jQuery(function() {
+    yourtopiaSunburst()
+});
+    </script>
+    <style type="text/css">
+#content .yourtopia {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+#content .yourtopia h1 {
+  text-align: center;
+  font-size: 150%;
+}
+#worldmap-outer {
+  /* must be same as set directly on map widget in js */
+  width: 400px;
+  float: left;
+}
+#weights-outer {
+  width: 350px;
+  float: right;
+}
+.category-counts {
+  width: 48%;
+  float: left;
+  padding-right: 2%;
+}
+ul.chartlist {
+  width: 98%;
+}
+.chartlist li a {
+  font-size: 90%;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+.clear {
+  clear: both;
+}
+    </style>
+</head>
+<body class="Home">
+<div id="wrapper" class="hfeed">
+  <div id="header">
+  <div id="masthead">
+    <div id="branding" role="banner">
+       <h1 id="site-title">
+       <a href="/" title="Home">
+         <img src="/static/img/logo.png" alt="logo">
+        </a>
+      </h1>
+      <div id="site-description">
+        Global development beyond GDP
+      </div>
+    </div> <!-- /branding -->
+    <div id="login-and-search">
+      <iframe src="http://www.facebook.com/widgets/like.php?href=http://eutopia.guoxu.org" scrolling="no" frameborder="0" style="border:none; width:190px; height:25px"></iframe>
+      <div class="login-form">
+        <form action="" method="post">
+          <input id="login-username" type="login" class="login" name="username" value="" placeholder="Username ...">
+          <input name="reset" type="button" value="Forget name">
+        </form>
+      </div>
+      </div>
+  <div id="access" role="navigation">
+    <div class="menu">
+    <ul>
+    <li class="menu-item"><a href="/">Home</a></li>
+    <li class="menu-item"><a href="/quiz">Quiz</a></li>
+    <li class="menu-item"><a href="/result">Results</a></li>
+    <li class="menu-item"><a href="/about">About</a></li>
+    <li class="menu-item"><a href="http://bitbucket.org/okfn/openhdi">Source code</a></li>
+    </ul>
+    </div> <!-- .menu -->
+  </div> <!-- #access -->
+  </div><!-- #masthead -->
+  </div><!-- #header -->
+  <div id="main">
+    <div id="container">
+      <div id="content" role="main">
+        <div class="page type-page hentry">
+          <div class="entry-content">
+            <div>
+    <div class="yourtopia" style="width: 765px; border: dashed 1px #999999; background-color: #D5DFFF; padding: 2%">
+      <h1>WorldTopia! YourTopia Based on the <strong>Average</strong></h1>
+    </div>
+	<div style="background-color: #e2e2e2; float: left; width: 800px; border: dashed 1px #999999">
+         <div style="padding:2%; float: left">Your <strong>preferred countries</strong> and <strong>weighting scheme</strong><div id="worldmap" style="background-color: #eaf7fe; border: dashed 1px #999999;"></div></div>
+		<div style="padding:2%; float: right; padding-top: 40px"><div id="weights"></div></div>
+    </div>
+    <div class="clear"></div>
+	<br>
+	<div style="width: 765px; float: left; background-color:#f0f0f0; padding: 2%; border: dashed 1px #999999">
+    <div>
+      <strong>Global Rankings</strong>
+      <ul class="chartlist">
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Norway" target="_blank">1. Norway</a>
+          <span class="count">1.0</span>
+          <span class="index" style="width: 100.0%">1.0</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Iceland" target="_blank">2. Iceland</a>
+          <span class="count">0.998</span>
+          <span class="index" style="width: 99.8%">0.998</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Sweden" target="_blank">3. Sweden</a>
+          <span class="count">0.976</span>
+          <span class="index" style="width: 97.6%">0.976</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Liechtenstein" target="_blank">4. Liechtenstein</a>
+          <span class="count">0.976</span>
+          <span class="index" style="width: 97.6%">0.976</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/United States" target="_blank">5. United States</a>
+          <span class="count">0.97</span>
+          <span class="index" style="width: 97.0%">0.97</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/New Zealand" target="_blank">6. New Zealand</a>
+          <span class="count">0.96</span>
+          <span class="index" style="width: 96.0%">0.96</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Cuba" target="_blank">7. Cuba</a>
+          <span class="count">0.958</span>
+          <span class="index" style="width: 95.8%">0.958</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Australia" target="_blank">8. Australia</a>
+          <span class="count">0.956</span>
+          <span class="index" style="width: 95.6%">0.956</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Finland" target="_blank">9. Finland</a>
+          <span class="count">0.956</span>
+          <span class="index" style="width: 95.6%">0.956</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Canada" target="_blank">10. Canada</a>
+          <span class="count">0.944</span>
+          <span class="index" style="width: 94.4%">0.944</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Singapore" target="_blank">11. Singapore</a>
+          <span class="count">0.939</span>
+          <span class="index" style="width: 93.9%">0.939</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Japan" target="_blank">12. Japan</a>
+          <span class="count">0.936</span>
+          <span class="index" style="width: 93.6%">0.936</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Israel" target="_blank">13. Israel</a>
+          <span class="count">0.933</span>
+          <span class="index" style="width: 93.3%">0.933</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Switzerland" target="_blank">14. Switzerland</a>
+          <span class="count">0.932</span>
+          <span class="index" style="width: 93.2%">0.932</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Denmark" target="_blank">15. Denmark</a>
+          <span class="count">0.924</span>
+          <span class="index" style="width: 92.4%">0.924</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Germany" target="_blank">16. Germany</a>
+          <span class="count">0.923</span>
+          <span class="index" style="width: 92.3%">0.923</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Korea, Republic of" target="_blank">17. Korea, Republic of</a>
+          <span class="count">0.923</span>
+          <span class="index" style="width: 92.3%">0.923</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Ireland" target="_blank">18. Ireland</a>
+          <span class="count">0.921</span>
+          <span class="index" style="width: 92.1%">0.921</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/France" target="_blank">19. France</a>
+          <span class="count">0.92</span>
+          <span class="index" style="width: 92.0%">0.92</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Luxembourg" target="_blank">20. Luxembourg</a>
+          <span class="count">0.919</span>
+          <span class="index" style="width: 91.9%">0.919</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Netherlands" target="_blank">21. Netherlands</a>
+          <span class="count">0.918</span>
+          <span class="index" style="width: 91.8%">0.918</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/United Kingdom" target="_blank">22. United Kingdom</a>
+          <span class="count">0.916</span>
+          <span class="index" style="width: 91.6%">0.916</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Belgium" target="_blank">23. Belgium</a>
+          <span class="count">0.915</span>
+          <span class="index" style="width: 91.5%">0.915</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Austria" target="_blank">24. Austria</a>
+          <span class="count">0.914</span>
+          <span class="index" style="width: 91.4%">0.914</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Hong Kong" target="_blank">25. Hong Kong</a>
+          <span class="count">0.912</span>
+          <span class="index" style="width: 91.2%">0.912</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Spain" target="_blank">26. Spain</a>
+          <span class="count">0.905</span>
+          <span class="index" style="width: 90.5%">0.905</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Qatar" target="_blank">27. Qatar</a>
+          <span class="count">0.899</span>
+          <span class="index" style="width: 89.9%">0.899</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Cyprus" target="_blank">28. Cyprus</a>
+          <span class="count">0.894</span>
+          <span class="index" style="width: 89.4%">0.894</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Italy" target="_blank">29. Italy</a>
+          <span class="count">0.892</span>
+          <span class="index" style="width: 89.2%">0.892</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Barbados" target="_blank">30. Barbados</a>
+          <span class="count">0.879</span>
+          <span class="index" style="width: 87.9%">0.879</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Greece" target="_blank">31. Greece</a>
+          <span class="count">0.878</span>
+          <span class="index" style="width: 87.8%">0.878</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Czech Republic" target="_blank">32. Czech Republic</a>
+          <span class="count">0.869</span>
+          <span class="index" style="width: 86.9%">0.869</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Malta" target="_blank">33. Malta</a>
+          <span class="count">0.868</span>
+          <span class="index" style="width: 86.8%">0.868</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Brunei Darussalam" target="_blank">34. Brunei Darussalam</a>
+          <span class="count">0.867</span>
+          <span class="index" style="width: 86.7%">0.867</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Slovenia" target="_blank">35. Slovenia</a>
+          <span class="count">0.867</span>
+          <span class="index" style="width: 86.7%">0.867</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Kuwait" target="_blank">36. Kuwait</a>
+          <span class="count">0.853</span>
+          <span class="index" style="width: 85.3%">0.853</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Portugal" target="_blank">37. Portugal</a>
+          <span class="count">0.847</span>
+          <span class="index" style="width: 84.7%">0.847</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Bahamas" target="_blank">38. Bahamas</a>
+          <span class="count">0.839</span>
+          <span class="index" style="width: 83.9%">0.839</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/United Arab Emirates" target="_blank">39. United Arab Emirates</a>
+          <span class="count">0.838</span>
+          <span class="index" style="width: 83.8%">0.838</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Mexico" target="_blank">40. Mexico</a>
+          <span class="count">0.83</span>
+          <span class="index" style="width: 83.0%">0.83</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Bahrain" target="_blank">41. Bahrain</a>
+          <span class="count">0.828</span>
+          <span class="index" style="width: 82.8%">0.828</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Poland" target="_blank">42. Poland</a>
+          <span class="count">0.824</span>
+          <span class="index" style="width: 82.4%">0.824</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Estonia" target="_blank">43. Estonia</a>
+          <span class="count">0.823</span>
+          <span class="index" style="width: 82.3%">0.823</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Hungary" target="_blank">44. Hungary</a>
+          <span class="count">0.823</span>
+          <span class="index" style="width: 82.3%">0.823</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Oman" target="_blank">45. Oman</a>
+          <span class="count">0.822</span>
+          <span class="index" style="width: 82.2%">0.822</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Saudi Arabia" target="_blank">46. Saudi Arabia</a>
+          <span class="count">0.818</span>
+          <span class="index" style="width: 81.8%">0.818</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Palau" target="_blank">47. Palau</a>
+          <span class="count">0.812</span>
+          <span class="index" style="width: 81.2%">0.812</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Chile" target="_blank">48. Chile</a>
+          <span class="count">0.81</span>
+          <span class="index" style="width: 81.0%">0.81</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Montenegro" target="_blank">49. Montenegro</a>
+          <span class="count">0.809</span>
+          <span class="index" style="width: 80.9%">0.809</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Argentina" target="_blank">50. Argentina</a>
+          <span class="count">0.807</span>
+          <span class="index" style="width: 80.7%">0.807</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Croatia" target="_blank">51. Croatia</a>
+          <span class="count">0.8</span>
+          <span class="index" style="width: 80.0%">0.8</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Costa Rica" target="_blank">52. Costa Rica</a>
+          <span class="count">0.799</span>
+          <span class="index" style="width: 79.9%">0.799</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Lithuania" target="_blank">53. Lithuania</a>
+          <span class="count">0.797</span>
+          <span class="index" style="width: 79.7%">0.797</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Slovakia" target="_blank">54. Slovakia</a>
+          <span class="count">0.796</span>
+          <span class="index" style="width: 79.6%">0.796</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Latvia" target="_blank">55. Latvia</a>
+          <span class="count">0.794</span>
+          <span class="index" style="width: 79.4%">0.794</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Uruguay" target="_blank">56. Uruguay</a>
+          <span class="count">0.793</span>
+          <span class="index" style="width: 79.3%">0.793</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Libyan Arab Jamahiriya" target="_blank">57. Libyan Arab Jamahiriya</a>
+          <span class="count">0.789</span>
+          <span class="index" style="width: 78.9%">0.789</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Malaysia" target="_blank">58. Malaysia</a>
+          <span class="count">0.787</span>
+          <span class="index" style="width: 78.7%">0.787</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Albania" target="_blank">59. Albania</a>
+          <span class="count">0.78</span>
+          <span class="index" style="width: 78.0%">0.78</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Panama" target="_blank">60. Panama</a>
+          <span class="count">0.779</span>
+          <span class="index" style="width: 77.9%">0.779</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Antigua and Barbuda" target="_blank">61. Antigua and Barbuda</a>
+          <span class="count">0.776</span>
+          <span class="index" style="width: 77.6%">0.776</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Tunisia" target="_blank">62. Tunisia</a>
+          <span class="count">0.775</span>
+          <span class="index" style="width: 77.5%">0.775</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Seychelles" target="_blank">63. Seychelles</a>
+          <span class="count">0.774</span>
+          <span class="index" style="width: 77.4%">0.774</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Saint Vincent and the Grenadines" target="_blank">64. Saint Vincent and the Grenadines</a>
+          <span class="count">0.772</span>
+          <span class="index" style="width: 77.2%">0.772</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Romania" target="_blank">65. Romania</a>
+          <span class="count">0.77</span>
+          <span class="index" style="width: 77.0%">0.77</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Serbia" target="_blank">66. Serbia</a>
+          <span class="count">0.769</span>
+          <span class="index" style="width: 76.9%">0.769</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Dominica" target="_blank">67. Dominica</a>
+          <span class="count">0.767</span>
+          <span class="index" style="width: 76.7%">0.767</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Bosnia and Herzegovina" target="_blank">68. Bosnia and Herzegovina</a>
+          <span class="count">0.767</span>
+          <span class="index" style="width: 76.7%">0.767</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Trinidad and Tobago" target="_blank">69. Trinidad and Tobago</a>
+          <span class="count">0.767</span>
+          <span class="index" style="width: 76.7%">0.767</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Brazil" target="_blank">70. Brazil</a>
+          <span class="count">0.76</span>
+          <span class="index" style="width: 76.0%">0.76</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Saint Kitts and Nevis" target="_blank">71. Saint Kitts and Nevis</a>
+          <span class="count">0.759</span>
+          <span class="index" style="width: 75.9%">0.759</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Grenada" target="_blank">72. Grenada</a>
+          <span class="count">0.757</span>
+          <span class="index" style="width: 75.7%">0.757</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Belarus" target="_blank">73. Belarus</a>
+          <span class="count">0.753</span>
+          <span class="index" style="width: 75.3%">0.753</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Marshall Islands" target="_blank">74. Marshall Islands</a>
+          <span class="count">0.753</span>
+          <span class="index" style="width: 75.3%">0.753</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Belize" target="_blank">75. Belize</a>
+          <span class="count">0.753</span>
+          <span class="index" style="width: 75.3%">0.753</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Bulgaria" target="_blank">76. Bulgaria</a>
+          <span class="count">0.753</span>
+          <span class="index" style="width: 75.3%">0.753</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Russian Federation" target="_blank">77. Russian Federation</a>
+          <span class="count">0.752</span>
+          <span class="index" style="width: 75.2%">0.752</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Iran, Islamic Republic of" target="_blank">78. Iran, Islamic Republic of</a>
+          <span class="count">0.752</span>
+          <span class="index" style="width: 75.2%">0.752</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Saint Lucia" target="_blank">79. Saint Lucia</a>
+          <span class="count">0.752</span>
+          <span class="index" style="width: 75.2%">0.752</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Jamaica" target="_blank">80. Jamaica</a>
+          <span class="count">0.75</span>
+          <span class="index" style="width: 75.0%">0.75</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Macedonia, the former Yugoslav Republic of" target="_blank">81. Macedonia, the former Yugoslav Republic of</a>
+          <span class="count">0.749</span>
+          <span class="index" style="width: 74.9%">0.749</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Turkey" target="_blank">82. Turkey</a>
+          <span class="count">0.748</span>
+          <span class="index" style="width: 74.8%">0.748</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Ukraine" target="_blank">83. Ukraine</a>
+          <span class="count">0.744</span>
+          <span class="index" style="width: 74.4%">0.744</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Venezuela, Bolivarian Republic of" target="_blank">84. Venezuela, Bolivarian Republic of</a>
+          <span class="count">0.742</span>
+          <span class="index" style="width: 74.2%">0.742</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Ecuador" target="_blank">85. Ecuador</a>
+          <span class="count">0.738</span>
+          <span class="index" style="width: 73.8%">0.738</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Tonga" target="_blank">86. Tonga</a>
+          <span class="count">0.731</span>
+          <span class="index" style="width: 73.1%">0.731</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/China" target="_blank">87. China</a>
+          <span class="count">0.731</span>
+          <span class="index" style="width: 73.1%">0.731</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Colombia" target="_blank">88. Colombia</a>
+          <span class="count">0.729</span>
+          <span class="index" style="width: 72.9%">0.729</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Moldova, Republic of" target="_blank">89. Moldova, Republic of</a>
+          <span class="count">0.727</span>
+          <span class="index" style="width: 72.7%">0.727</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Mauritius" target="_blank">90. Mauritius</a>
+          <span class="count">0.723</span>
+          <span class="index" style="width: 72.3%">0.723</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Jordan" target="_blank">91. Jordan</a>
+          <span class="count">0.723</span>
+          <span class="index" style="width: 72.3%">0.723</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Algeria" target="_blank">92. Algeria</a>
+          <span class="count">0.721</span>
+          <span class="index" style="width: 72.1%">0.721</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Lebanon" target="_blank">93. Lebanon</a>
+          <span class="count">0.718</span>
+          <span class="index" style="width: 71.8%">0.718</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Sri Lanka" target="_blank">94. Sri Lanka</a>
+          <span class="count">0.718</span>
+          <span class="index" style="width: 71.8%">0.718</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Fiji" target="_blank">95. Fiji</a>
+          <span class="count">0.717</span>
+          <span class="index" style="width: 71.7%">0.717</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Georgia" target="_blank">96. Georgia</a>
+          <span class="count">0.714</span>
+          <span class="index" style="width: 71.4%">0.714</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Peru" target="_blank">97. Peru</a>
+          <span class="count">0.712</span>
+          <span class="index" style="width: 71.2%">0.712</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Armenia" target="_blank">98. Armenia</a>
+          <span class="count">0.706</span>
+          <span class="index" style="width: 70.6%">0.706</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Syrian Arab Republic" target="_blank">99. Syrian Arab Republic</a>
+          <span class="count">0.702</span>
+          <span class="index" style="width: 70.2%">0.702</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Samoa" target="_blank">100. Samoa</a>
+          <span class="count">0.697</span>
+          <span class="index" style="width: 69.7%">0.697</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Suriname" target="_blank">101. Suriname</a>
+          <span class="count">0.689</span>
+          <span class="index" style="width: 68.9%">0.689</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Paraguay" target="_blank">102. Paraguay</a>
+          <span class="count">0.685</span>
+          <span class="index" style="width: 68.5%">0.685</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/El Salvador" target="_blank">103. El Salvador</a>
+          <span class="count">0.684</span>
+          <span class="index" style="width: 68.4%">0.684</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Thailand" target="_blank">104. Thailand</a>
+          <span class="count">0.684</span>
+          <span class="index" style="width: 68.4%">0.684</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Kazakhstan" target="_blank">105. Kazakhstan</a>
+          <span class="count">0.68</span>
+          <span class="index" style="width: 68.0%">0.68</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Turkmenistan" target="_blank">106. Turkmenistan</a>
+          <span class="count">0.676</span>
+          <span class="index" style="width: 67.6%">0.676</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Viet Nam" target="_blank">107. Viet Nam</a>
+          <span class="count">0.673</span>
+          <span class="index" style="width: 67.3%">0.673</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Kyrgyzstan" target="_blank">108. Kyrgyzstan</a>
+          <span class="count">0.673</span>
+          <span class="index" style="width: 67.3%">0.673</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Egypt" target="_blank">109. Egypt</a>
+          <span class="count">0.672</span>
+          <span class="index" style="width: 67.2%">0.672</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Azerbaijan" target="_blank">110. Azerbaijan</a>
+          <span class="count">0.671</span>
+          <span class="index" style="width: 67.1%">0.671</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Dominican Republic" target="_blank">111. Dominican Republic</a>
+          <span class="count">0.671</span>
+          <span class="index" style="width: 67.1%">0.671</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Micronesia, Federated States of" target="_blank">112. Micronesia, Federated States of</a>
+          <span class="count">0.67</span>
+          <span class="index" style="width: 67.0%">0.67</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Maldives" target="_blank">113. Maldives</a>
+          <span class="count">0.67</span>
+          <span class="index" style="width: 67.0%">0.67</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Honduras" target="_blank">114. Honduras</a>
+          <span class="count">0.669</span>
+          <span class="index" style="width: 66.9%">0.669</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Vanuatu" target="_blank">115. Vanuatu</a>
+          <span class="count">0.667</span>
+          <span class="index" style="width: 66.7%">0.667</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Philippines" target="_blank">116. Philippines</a>
+          <span class="count">0.662</span>
+          <span class="index" style="width: 66.2%">0.662</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Uzbekistan" target="_blank">117. Uzbekistan</a>
+          <span class="count">0.662</span>
+          <span class="index" style="width: 66.2%">0.662</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Guyana" target="_blank">118. Guyana</a>
+          <span class="count">0.657</span>
+          <span class="index" style="width: 65.7%">0.657</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Morocco" target="_blank">119. Morocco</a>
+          <span class="count">0.657</span>
+          <span class="index" style="width: 65.7%">0.657</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Indonesia" target="_blank">120. Indonesia</a>
+          <span class="count">0.653</span>
+          <span class="index" style="width: 65.3%">0.653</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Nicaragua" target="_blank">121. Nicaragua</a>
+          <span class="count">0.652</span>
+          <span class="index" style="width: 65.2%">0.652</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Cape Verde" target="_blank">122. Cape Verde</a>
+          <span class="count">0.646</span>
+          <span class="index" style="width: 64.6%">0.646</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Mongolia" target="_blank">123. Mongolia</a>
+          <span class="count">0.644</span>
+          <span class="index" style="width: 64.4%">0.644</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Kiribati" target="_blank">124. Kiribati</a>
+          <span class="count">0.64</span>
+          <span class="index" style="width: 64.0%">0.64</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Bolivia, Plurinational State of" target="_blank">125. Bolivia, Plurinational State of</a>
+          <span class="count">0.636</span>
+          <span class="index" style="width: 63.6%">0.636</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Gabon" target="_blank">126. Gabon</a>
+          <span class="count">0.626</span>
+          <span class="index" style="width: 62.6%">0.626</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Botswana" target="_blank">127. Botswana</a>
+          <span class="count">0.625</span>
+          <span class="index" style="width: 62.5%">0.625</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Bhutan" target="_blank">128. Bhutan</a>
+          <span class="count">0.619</span>
+          <span class="index" style="width: 61.9%">0.619</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Guatemala" target="_blank">129. Guatemala</a>
+          <span class="count">0.617</span>
+          <span class="index" style="width: 61.7%">0.617</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Iraq" target="_blank">130. Iraq</a>
+          <span class="count">0.617</span>
+          <span class="index" style="width: 61.7%">0.617</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Namibia" target="_blank">131. Namibia</a>
+          <span class="count">0.604</span>
+          <span class="index" style="width: 60.4%">0.604</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/South Africa" target="_blank">132. South Africa</a>
+          <span class="count">0.582</span>
+          <span class="index" style="width: 58.2%">0.582</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Solomon Islands" target="_blank">133. Solomon Islands</a>
+          <span class="count">0.582</span>
+          <span class="index" style="width: 58.2%">0.582</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Tajikistan" target="_blank">134. Tajikistan</a>
+          <span class="count">0.58</span>
+          <span class="index" style="width: 58.0%">0.58</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/India" target="_blank">135. India</a>
+          <span class="count">0.57</span>
+          <span class="index" style="width: 57.0%">0.57</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Pakistan" target="_blank">136. Pakistan</a>
+          <span class="count">0.542</span>
+          <span class="index" style="width: 54.2%">0.542</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Bangladesh" target="_blank">137. Bangladesh</a>
+          <span class="count">0.521</span>
+          <span class="index" style="width: 52.1%">0.521</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Lao People's Democratic Republic" target="_blank">138. Lao People's Democratic Republic</a>
+          <span class="count">0.517</span>
+          <span class="index" style="width: 51.7%">0.517</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Djibouti" target="_blank">139. Djibouti</a>
+          <span class="count">0.516</span>
+          <span class="index" style="width: 51.6%">0.516</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Equatorial Guinea" target="_blank">140. Equatorial Guinea</a>
+          <span class="count">0.513</span>
+          <span class="index" style="width: 51.3%">0.513</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Ghana" target="_blank">141. Ghana</a>
+          <span class="count">0.509</span>
+          <span class="index" style="width: 50.9%">0.509</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Sao Tome and Principe" target="_blank">142. Sao Tome and Principe</a>
+          <span class="count">0.498</span>
+          <span class="index" style="width: 49.8%">0.498</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Papua New Guinea" target="_blank">143. Papua New Guinea</a>
+          <span class="count">0.491</span>
+          <span class="index" style="width: 49.1%">0.491</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Congo" target="_blank">144. Congo</a>
+          <span class="count">0.482</span>
+          <span class="index" style="width: 48.2%">0.482</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Comoros" target="_blank">145. Comoros</a>
+          <span class="count">0.482</span>
+          <span class="index" style="width: 48.2%">0.482</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Togo" target="_blank">146. Togo</a>
+          <span class="count">0.48</span>
+          <span class="index" style="width: 48.0%">0.48</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Cambodia" target="_blank">147. Cambodia</a>
+          <span class="count">0.477</span>
+          <span class="index" style="width: 47.7%">0.477</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Madagascar" target="_blank">148. Madagascar</a>
+          <span class="count">0.475</span>
+          <span class="index" style="width: 47.5%">0.475</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Mauritania" target="_blank">149. Mauritania</a>
+          <span class="count">0.467</span>
+          <span class="index" style="width: 46.7%">0.467</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Kenya" target="_blank">150. Kenya</a>
+          <span class="count">0.467</span>
+          <span class="index" style="width: 46.7%">0.467</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Nepal" target="_blank">151. Nepal</a>
+          <span class="count">0.465</span>
+          <span class="index" style="width: 46.5%">0.465</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Senegal" target="_blank">152. Senegal</a>
+          <span class="count">0.457</span>
+          <span class="index" style="width: 45.7%">0.457</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Sudan" target="_blank">153. Sudan</a>
+          <span class="count">0.457</span>
+          <span class="index" style="width: 45.7%">0.457</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Haiti" target="_blank">154. Haiti</a>
+          <span class="count">0.45</span>
+          <span class="index" style="width: 45.0%">0.45</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Timor-Leste" target="_blank">155. Timor-Leste</a>
+          <span class="count">0.449</span>
+          <span class="index" style="width: 44.9%">0.449</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Swaziland" target="_blank">156. Swaziland</a>
+          <span class="count">0.443</span>
+          <span class="index" style="width: 44.3%">0.443</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Yemen" target="_blank">157. Yemen</a>
+          <span class="count">0.44</span>
+          <span class="index" style="width: 44.0%">0.44</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Myanmar" target="_blank">158. Myanmar</a>
+          <span class="count">0.437</span>
+          <span class="index" style="width: 43.7%">0.437</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Tanzania, United Republic of" target="_blank">159. Tanzania, United Republic of</a>
+          <span class="count">0.428</span>
+          <span class="index" style="width: 42.8%">0.428</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Eritrea" target="_blank">160. Eritrea</a>
+          <span class="count">0.427</span>
+          <span class="index" style="width: 42.7%">0.427</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Cameroon" target="_blank">161. Cameroon</a>
+          <span class="count">0.421</span>
+          <span class="index" style="width: 42.1%">0.421</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Benin" target="_blank">162. Benin</a>
+          <span class="count">0.421</span>
+          <span class="index" style="width: 42.1%">0.421</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Ethiopia" target="_blank">163. Ethiopia</a>
+          <span class="count">0.419</span>
+          <span class="index" style="width: 41.9%">0.419</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Guinea" target="_blank">164. Guinea</a>
+          <span class="count">0.419</span>
+          <span class="index" style="width: 41.9%">0.419</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Uganda" target="_blank">165. Uganda</a>
+          <span class="count">0.417</span>
+          <span class="index" style="width: 41.7%">0.417</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Nigeria" target="_blank">166. Nigeria</a>
+          <span class="count">0.417</span>
+          <span class="index" style="width: 41.7%">0.417</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Angola" target="_blank">167. Angola</a>
+          <span class="count">0.392</span>
+          <span class="index" style="width: 39.2%">0.392</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Lesotho" target="_blank">168. Lesotho</a>
+          <span class="count">0.389</span>
+          <span class="index" style="width: 38.9%">0.389</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Malawi" target="_blank">169. Malawi</a>
+          <span class="count">0.387</span>
+          <span class="index" style="width: 38.7%">0.387</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Côte d'Ivoire" target="_blank">170. Côte d'Ivoire</a>
+          <span class="count">0.383</span>
+          <span class="index" style="width: 38.3%">0.383</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Gambia" target="_blank">171. Gambia</a>
+          <span class="count">0.363</span>
+          <span class="index" style="width: 36.3%">0.363</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Mali" target="_blank">172. Mali</a>
+          <span class="count">0.346</span>
+          <span class="index" style="width: 34.6%">0.346</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Burkina Faso" target="_blank">173. Burkina Faso</a>
+          <span class="count">0.331</span>
+          <span class="index" style="width: 33.1%">0.331</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Somalia" target="_blank">174. Somalia</a>
+          <span class="count">0.329</span>
+          <span class="index" style="width: 32.9%">0.329</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Rwanda" target="_blank">175. Rwanda</a>
+          <span class="count">0.316</span>
+          <span class="index" style="width: 31.6%">0.316</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Liberia" target="_blank">176. Liberia</a>
+          <span class="count">0.313</span>
+          <span class="index" style="width: 31.3%">0.313</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Zimbabwe" target="_blank">177. Zimbabwe</a>
+          <span class="count">0.311</span>
+          <span class="index" style="width: 31.1%">0.311</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Mozambique" target="_blank">178. Mozambique</a>
+          <span class="count">0.311</span>
+          <span class="index" style="width: 31.1%">0.311</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Zambia" target="_blank">179. Zambia</a>
+          <span class="count">0.296</span>
+          <span class="index" style="width: 29.6%">0.296</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Niger" target="_blank">180. Niger</a>
+          <span class="count">0.278</span>
+          <span class="index" style="width: 27.8%">0.278</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Central African Republic" target="_blank">181. Central African Republic</a>
+          <span class="count">0.263</span>
+          <span class="index" style="width: 26.3%">0.263</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Chad" target="_blank">182. Chad</a>
+          <span class="count">0.258</span>
+          <span class="index" style="width: 25.8%">0.258</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Congo, Democratic Republic of the" target="_blank">183. Congo, Democratic Republic of the</a>
+          <span class="count">0.257</span>
+          <span class="index" style="width: 25.7%">0.257</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Guinea-Bissau" target="_blank">184. Guinea-Bissau</a>
+          <span class="count">0.251</span>
+          <span class="index" style="width: 25.1%">0.251</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Sierra Leone" target="_blank">185. Sierra Leone</a>
+          <span class="count">0.247</span>
+          <span class="index" style="width: 24.7%">0.247</span>
+        </li>
+        <li>
+          <a href="http://en.wikipedia.org/wiki/Burundi" target="_blank">186. Burundi</a>
+          <span class="count">0.236</span>
+          <span class="index" style="width: 23.6%">0.236</span>
+        </li>
+      </ul>
+    </div>
+	</div>
+</div>
+          </div><!-- .entry-content -->
+        </div>
+        <div id="comments">
+        </div><!-- #comments -->
+      </div> <!-- #content -->
+    </div> <!-- #container -->
+    <div id="primary" class="widget-area" role="complementary">
+      <ul class="xoxo">
+      </ul>
+    </div><!-- #primary .widget-area -->
+  </div><!-- #main -->
+    <!-- footer -->
+  <div id="footer" role="contentinfo">
+    <div id="colophon">
+      <div id="footer-widget-area" role="complementary">
+        <div id="first" class="widget-area">
+          <ul class="xoxo">
+            <li id="text-12" class="widget-container widget_text">
+            <h3 class="widget-title">About</h3>
+            <div class="textwidget">
+              <ul>
+                <li>Created by Guo Xu, Dirk Heine, Rufus Pollock, Friedrich Lindenberg and Hannes Bretschneider</li>
+            </ul>
+          </div>
+          </li>
+        </ul>
+        </div><!-- #first .widget-area -->
+        <div id="fourth" class="widget-area">
+          <ul class="xoxo">
+            <li id="text-10" class="widget-container widget_text">
+            <h3 class="widget-title">Credits</h3>
+            <div class="textwidget">
+              <ul>
+                <li>
+                  <img src="http://assets.okfn.org/images/logo/okf_logo_white_and_green.png" id="footer-okf-logo" style="height: 20px; margin-bottom: -5px;">
+                  An
+                  <a href="http://www.okfn.org/">Open Knowledge Foundation</a> Project
+                </li>
+                <li>
+                  © <a href="http://www.okfn.org/">Open Knowledge Foundation</a>
+                </li>
+                <li>
+                  <a href="http://opendefinition.org/okd/">
+                  <img alt="This Content and Data is Open" src="http://assets.okfn.org/images/ok_buttons/oc_80x15_blue.png" style="border: none ; margin-bottom: -4px;">
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.opendefinition.org/okd/">
+                  <img alt="This Content and Data is Open" src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" style="border: none ; margin-bottom: -4px;">
+                  </a>
+                </li>
+            </ul>
+          </div>
+          </li>
+        </ul>
+        </div><!-- #fourth .widget-area -->
+      </div><!-- #footer-widget-area -->
+      <div id="site-info">
+      </div><!-- #site-info -->
+      <div id="site-generator">
+      </div><!-- #site-generator -->
+    </div><!-- #colophon -->
+  </div><!-- #footer -->
+</div><!-- #wrapper -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8271754-15']);
+  _gaq.push(['_setDomainName', '.yourtopia.net']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
+</html>
